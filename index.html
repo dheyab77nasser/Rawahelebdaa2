@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Rawahel Al-Ebdaa Construction</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <img src="images/Rawahel Ebdaa.png" width="100px" />
+      <h1 id="brand-name">Rawahel Al-Ebdaa</h1>
+
+      <div class="controls">
+        <button class="btn-ui" onclick="toggleLanguage()" id="lang-btn">
+          العربية
+        </button>
+        <button class="btn-ui" onclick="toggleTheme()" id="theme-btn">
+          Dark Mode
+        </button>
+      </div>
+
+ 
+
+    <!-- Hero Section -->
+    <div class="content">
+      <div class="welcome-text">
+        <h2 id="hero-title">Building the Future Together</h2>
+        <p id="hero-desc">
+          Rawahel Al-Ebdaa provides world-class construction solutions with a
+          focus on quality, safety, and innovation.
+        </p>
+        <div class="contact-btn">
+        <a href="https://api.whatsapp.com/send/?phone=966507745905&text&type=phone_number&app_absent=0" target="_blank" id="hero-btn">contact us
+        </a>
+        </div> 
+
+           </div>
+      <div class="welcome-img">
+        <img src="images/Gemini_Generated_Image_mjcu77mjcu77mjcu.png" />
+      </div>
+    </div>
+
+    <!-- Services Section -->
+    <div class="services-grid">
+      <div class="service-item">
+        <h3 id="serv-1-title">General Construction</h3>
+        <p id="serv-1-desc">Modern residential and commercial buildings.</p>
+      </div>
+      <div class="service-item">
+        <h3 id="serv-2-title">Project Management</h3>
+        <p id="serv-2-desc">
+          Expert planning and execution from start to finish.
+        </p>
+      </div>
+      <div class="service-item">
+        <h3 id="serv-3-title">Interior Design</h3>
+        <p id="serv-3-desc">Creative and functional space optimization.</p>
+      </div>
+    </div>
+
+    <script>
+      function toggleTheme() {
+        document.body.classList.toggle("dark-mode");
+        const isDark = document.body.classList.contains("dark-mode");
+        document.getElementById("theme-btn").innerText = isDark
+          ? "Light Mode"
+          : "Dark Mode";
+      }
+
+      function toggleLanguage() {
+        const html = document.documentElement;
+        if (html.dir === "ltr") {
+          html.dir = "rtl";
+          html.lang = "ar";
+          document.getElementById("lang-btn").innerText = "English";
+          document.getElementById("brand-name").innerText = "رواحل الإبداع";
+          document.getElementById("hero-title").innerText =
+            "نبني المستقبل معاً";
+          document.getElementById("hero-desc").innerText =
+            "تقدم رواحل الإبداع حلولاً إنشائية عالمية المستوى مع التركيز على الجودة والسلامة والابتكار.";
+          document.getElementById("hero-btn").innerText = "اتصل بنا";
+          document.getElementById("serv-1-title").innerText =
+            "المقاولات العامة";
+          document.getElementById("serv-2-title").innerText = "إدارة المشاريع";
+          document.getElementById("serv-3-title").innerText = "التصميم الداخلي";
+        } else {
+          html.dir = "ltr";
+          html.lang = "en";
+          document.getElementById("lang-btn").innerText = "العربية";
+          document.getElementById("brand-name").innerText = "Rawahel Al-Ebdaa";
+          document.getElementById("hero-title").innerText =
+            "Building the Future Together";
+          document.getElementById("hero-desc").innerText =
+            "Rawahel Al-Ebdaa provides world-class construction solutions with a focus on quality, safety, and innovation.";
+          document.getElementById("hero-btn").innerText = "Contact Us";
+        }
+      }
+    </script>
+  </body>
+</html>
