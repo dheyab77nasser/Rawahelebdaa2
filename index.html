@@ -2,62 +2,134 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8" />
+    <meta
+      name="keywords"
+      content="رواحل إبداع للمقاولات, مؤسسة رواحل إبداع, مقاولات عامة, بناء وتشييد, مصنع طابوق, توريد بلك أسمنتي, بناء فلل سكنية, مباني تجارية, مشاريع البنية التحتية, إدارة مشاريع, تصميم معماري, ترميم وصيانة, خرسانة جاهزة, توريد مواد بناء, منتجات أسمنتية, انترلوك وبلاط, توريد بردورة, مقاولات الدمام, مقاولات المنطقة الشرقية, مقاولات المملكة العربية السعودية, مقاولات الخبر, Rawahel Ebdaa Construction, Rawahel Ebdaa Contracting, Construction Company Saudi Arabia, General Contracting, Building & Construction, Brick and Block Factory, Concrete Blocks Supply, Residential Construction, Commercial Buildings, Infrastructure Projects, Project Management, Architectural Design, Restoration and Maintenance, Ready-mix Concrete, Construction Materials Supply, Cement Products, Interlock and Tiles, Curbstone Supply, Construction Dammam, Contracting Eastern Province, Construction KSA, Al Khobar Construction"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rawahel Al-Ebdaa Construction</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Header -->
-    <div class="header">
-      <img src="images/Rawahel Ebdaa.png" width="100px" />
-      <h1 id="brand-name">Rawahel Al-Ebdaa</h1>
-
-      <div class="controls">
-        <button class="btn-ui" onclick="toggleLanguage()" id="lang-btn">
-          العربية
-        </button>
-        <button class="btn-ui" onclick="toggleTheme()" id="theme-btn">
-          Dark Mode
-        </button>
+    <header class="header">
+      <div class="header-look">
+        <div class="logo-area">
+          <img src="images/Rawahel Ebdaa.png" alt="Logo" width="80px" />
+          <h1 id="brand-name">Rawahel Al-Ebdaa</h1>
+        </div>
+        <div class="controls">
+          <button class="btn-ui" onclick="toggleLanguage()" id="lang-btn">
+            العربية
+          </button>
+          <button class="btn-ui" onclick="toggleTheme()" id="theme-btn">
+            Dark Mode
+          </button>
+        </div>
       </div>
+    </header>
 
- 
+    <main>
+      <!-- Hero Section -->
+      <section class="content">
+        <div class="welcome-text">
+          <h2 id="hero-title">Building the Future Together</h2>
+          <p id="hero-desc">
+            Rawahel Al-Ebdaa provides world-class construction solutions with a
+            focus on quality, safety, and innovation. We turn your vision into
+            reality.
+          </p>
+          <div class="contact-btn">
+            <a
+              href="https://api.whatsapp.com/send/?phone=966507745905"
+              target="_blank"
+              id="hero-btn"
+              >WhatsApp</a
+            >
+            <a href="tel:966507745905" id="call-btn">Call Us</a>
+          </div>
+        </div>
+        <div class="welcome-img">
+          <img
+            src="images/Gemini_Generated_Image_mjcu77mjcu77mjcu.png"
+            alt="Hero Construction"
+          />
+        </div>
+      </section>
 
-    <!-- Hero Section -->
-    <div class="content">
-      <div class="welcome-text">
-        <h2 id="hero-title">Building the Future Together</h2>
-        <p id="hero-desc">
-          Rawahel Al-Ebdaa provides world-class construction solutions with a
-          focus on quality, safety, and innovation.
-        </p>
-        <div class="contact-btn">
-        <a href="https://api.whatsapp.com/send/?phone=966507745905&text&type=phone_number&app_absent=0" target="_blank" id="hero-btn">contact us
-        </a>
-        </div> 
+      <!-- About Section -->
+      <section class="about-section">
+        <h2 id="about-title">About Our Institution</h2>
+        <div class="about-content">
+          <p id="about-p1">
+            Rawahel Al-Ebdaa is a leading name in the Saudi construction market.
+            Founded on principles of excellence, we have grown to become a
+            comprehensive partner for infrastructure and architectural
+            development.
+          </p>
+          <p id="about-p2">
+            Our block factory ensures that every project uses the highest
+            quality materials, while our engineering teams oversee every detail
+            from foundation to finishing.
+          </p>
+        </div>
+      </section>
 
-           </div>
-      <div class="welcome-img">
-        <img src="images/Gemini_Generated_Image_mjcu77mjcu77mjcu.png" />
-      </div>
-    </div>
+      <!-- Services Section -->
+      <section class="services-grid">
+        <div class="service-item">
+          <h3 id="serv-1-title">General Construction</h3>
+          <p id="serv-1-desc">
+            Modern residential and commercial buildings designed to last.
+          </p>
+        </div>
+        <div class="service-item">
+          <h3 id="serv-2-title">Project Management</h3>
+          <p id="serv-2-desc">
+            Expert planning and execution delivering projects on time and
+            budget.
+          </p>
+        </div>
+        <div class="service-item">
+          <h3 id="serv-3-title">Supply Chain</h3>
+          <p id="serv-3-desc">
+            Direct supply of high-quality cement blocks and construction
+            materials.
+          </p>
+        </div>
+      </section>
 
-    <!-- Services Section -->
-    <div class="services-grid">
-      <div class="service-item">
-        <h3 id="serv-1-title">General Construction</h3>
-        <p id="serv-1-desc">Modern residential and commercial buildings.</p>
-      </div>
-      <div class="service-item">
-        <h3 id="serv-2-title">Project Management</h3>
-        <p id="serv-2-desc">
-          Expert planning and execution from start to finish.
-        </p>
-      </div>
-      <div class="service-item">
-        <h3 id="serv-3-title">Interior Design</h3>
-        <p id="serv-3-desc">Creative and functional space optimization.</p>
-      </div>
-    </div>
+      <!-- Gallery Section -->
+      <section class="gallery">
+        <h2 id="gallery">Gallery</h2>
+        <div class="gallery-grid">
+          <img
+            src="images/pexels-2153622414-32817699.jpg"
+          />
+          <img
+            src="images/pexels-armand-m-33689718.jpg"
+          />
+          <img
+            src="images/pexels-davidelocatelli-2383650.jpg"
+          />
+          <img
+            src="images/pexels-malik-abdalbagi-513960250-16241179.jpg"
+          />
+          <img
+            src="images/pexels-shadman-sirwan-424975017-34975633.jpg"
+          />
+          <img
+            src="https://mazallatajyal.com/wp-content/uploads/2023/02/12-800x605.jpg?v=1676503840"
+          />
+
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p id="footer-text">
+        &copy; 2024 Rawahel Al-Ebdaa Construction. All Rights Reserved.
+      </p>
+    </footer>
 
     <script>
       function toggleTheme() {
@@ -73,27 +145,75 @@
         if (html.dir === "ltr") {
           html.dir = "rtl";
           html.lang = "ar";
+          // UI elements
           document.getElementById("lang-btn").innerText = "English";
           document.getElementById("brand-name").innerText = "رواحل الإبداع";
+          // Hero
           document.getElementById("hero-title").innerText =
             "نبني المستقبل معاً";
           document.getElementById("hero-desc").innerText =
             "تقدم رواحل الإبداع حلولاً إنشائية عالمية المستوى مع التركيز على الجودة والسلامة والابتكار.";
-          document.getElementById("hero-btn").innerText = "اتصل بنا";
+          document.getElementById("hero-btn").innerText = "واتساب";
+          document.getElementById("call-btn").innerText = "اتصل بنا";
+          // About
+          document.getElementById("about-title").innerText = "عن المؤسسة";
+          document.getElementById("about-p1").innerText =
+            "تعتبر رواحل الإبداع اسماً رائدًا في سوق المقاولات السعودي. تأسست على مبادئ التميز.";
+          document.getElementById("about-p2").innerText =
+            "يضمن مصنع البلك الخاص بنا استخدام أجود المواد في كل مشروع.";
+          // Services
           document.getElementById("serv-1-title").innerText =
             "المقاولات العامة";
+          document.getElementById("serv-1-desc").innerText =
+            "مباني سكنية وتجارية حديثة صممت لتدوم.";
           document.getElementById("serv-2-title").innerText = "إدارة المشاريع";
-          document.getElementById("serv-3-title").innerText = "التصميم الداخلي";
+          document.getElementById("serv-2-desc").innerText =
+            "تخطيط وتنفيذ خبير يسلم المشاريع في الوقت المحدد.";
+          document.getElementById("serv-3-title").innerText = "توريد المواد";
+          document.getElementById("serv-3-desc").innerText =
+            "توريد مباشر للبلك الأسمنتي عالي الجودة ومواد البناء.";
+          // Gallery & Footer
+          document.getElementById("gallery").innerText =
+            "المعرض";
+          document.getElementById("footer-text").innerText =
+            "جميع الحقوق محفوظة © ٢٠٢٤ مؤسسة رواحل الإبداع للمقاولات";
         } else {
           html.dir = "ltr";
           html.lang = "en";
+          // UI elements
           document.getElementById("lang-btn").innerText = "العربية";
           document.getElementById("brand-name").innerText = "Rawahel Al-Ebdaa";
+          // Hero
           document.getElementById("hero-title").innerText =
             "Building the Future Together";
           document.getElementById("hero-desc").innerText =
-            "Rawahel Al-Ebdaa provides world-class construction solutions with a focus on quality, safety, and innovation.";
-          document.getElementById("hero-btn").innerText = "Contact Us";
+            "Rawahel Al-Ebdaa provides world-class construction solutions with a focus on quality, safety, and innovation. We turn your vision into reality.";
+          document.getElementById("hero-btn").innerText = "WhatsApp";
+          document.getElementById("call-btn").innerText = "Call Us";
+          // About
+          document.getElementById("about-title").innerText =
+            "About Our Institution";
+          document.getElementById("about-p1").innerText =
+            "Rawahel Al-Ebdaa is a leading name in the Saudi construction market. Founded on principles of excellence.";
+          document.getElementById("about-p2").innerText =
+            "Our block factory ensures that every project uses the highest quality materials.";
+          // Services
+          document.getElementById("serv-1-title").innerText =
+            "General Construction";
+          document.getElementById("serv-1-desc").innerText =
+            "Modern residential and commercial buildings designed to last.";
+          document.getElementById("serv-2-title").innerText =
+            "Project Management";
+          document.getElementById("serv-2-desc").innerText =
+            "Expert planning and execution delivering projects on time and budget.";
+          document.getElementById("serv-3-title").innerText = "Supply Chain";
+          document.getElementById("serv-3-desc").innerText =
+            "Direct supply of high-quality cement blocks and construction materials.";
+          // Gallery & Footer
+          document.getElementById("gallery-title").innerText =
+            "Our Recent Projects";
+          document.getElementById("footer-text").innerText =
+            "© 2024 Rawahel Al-Ebdaa Construction. All Rights Reserved.";
         }
       }
     </script>
